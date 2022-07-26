@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Polyglot Editor</title>
+
+	<!--script type="text/javascript" src="parts.js"></script-->
+	<script type="text/javascript" src="libs/jquery.js"></script>
+	<script type="text/javascript" src="libs/jquery-ui.js"></script>
+
+	<link rel="stylesheet" href="jquery-ui.min.css">
+
+	<style type="text/css">
+		body
+		{
+			background-color: gray;		
+		}
+
+		.editor
+		{
+			position: absolute;
+			width: 60%;
+			border: 2px solid black;
+			background-color: lightgray;
+			padding: 10px;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+		}
+	</style>
+</head>
+<body>
+	<div class="editor">
+
+		<!-- Menu -->
+		<ul>
+		    <li><a href="#noun-tab">Имя существительное</a></li>
+		    <li><a href="#adjective-tab">Имя прилагательное</a></li>
+		    <li><a href="#verb-tab">Глагол</a></li>
+		</ul>
+
+		<!-- Noun -->
+		<div id="noun-tab">
+			<h3>Имя существительное</h3>
+			<label>Слово:</label><br>
+			<input type="text" >
+
+
+		</div>
+
+		<!-- Adjective -->
+		<div id="adjective-tab">
+
+		</div>
+
+		<!-- Verb -->
+		<div id="verb-tab">
+
+		</div>
+
+	</div>
+
+	<script>
+  	$( ".editor" ).tabs();
+  </script>
+
+</body>
+</html>
